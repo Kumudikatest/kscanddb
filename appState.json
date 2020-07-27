@@ -1,0 +1,107 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "eb92f3e0-f15c-4bc7-9ded-86005aa6c647": {
+        "id": "eb92f3e0-f15c-4bc7-9ded-86005aa6c647",
+        "parent": null,
+        "name": "kscanddb.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kscanddb.js",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 26
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kscanddb"
+        },
+        "triggers": [],
+        "testCases": {
+          "9a93fb52-0489-43af-9e4f-473d50c06c13": {
+            "id": "9a93fb52-0489-43af-9e4f-473d50c06c13",
+            "name": "Test event",
+            "functionId": "eb92f3e0-f15c-4bc7-9ded-86005aa6c647",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "eb92f3e0-f15c-4bc7-9ded-86005aa6c647"
+    ],
+    "currentFileId": "eb92f3e0-f15c-4bc7-9ded-86005aa6c647",
+    "resources": {
+      "ddbkum": {
+        "name": "ddbkum",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "kum",
+            "partitionKey": "id",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.4",
+    "projectName": "kscanddb",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1595850594271
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kscanddb",
+      "url": "https://github.com/Kumudikatest/kscanddb"
+    }
+  }
+}
