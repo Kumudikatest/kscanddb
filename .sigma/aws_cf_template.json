@@ -9,6 +9,10 @@
     "lambdaCodeKeyParameter": {
       "Type": "String",
       "Description": "S3 key of the Lambda deployment package"
+    },
+    "envVark1Parameter": {
+      "Type": "String",
+      "Description": "Value of the environment variable: k1, for all Lambdas"
     }
   },
   "Outputs": {
@@ -71,6 +75,9 @@
         },
         "Environment": {
           "Variables": {
+            "k1": {
+              "Ref": "envVark1Parameter"
+            },
             "SIGMA_AWS_ACC_ID": {
               "Ref": "AWS::AccountId"
             }
