@@ -76,8 +76,8 @@
       {
         "lambdaId": "all",
         "varKey": "k1",
-        "varValue": null,
-        "shouldPersist": false,
+        "varValue": "v1",
+        "shouldPersist": true,
         "displayOnly": false,
         "editable": true
       }
@@ -103,7 +103,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1595852129987
+    "lastSave": 1595852924310
   },
   "VCS_STATE": {
     "provider": "GitHub",
