@@ -61,7 +61,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -78,6 +78,14 @@
         "varKey": "k1",
         "varValue": "v1",
         "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "k2",
+        "varValue": null,
+        "shouldPersist": false,
         "displayOnly": false,
         "editable": true
       }
@@ -103,7 +111,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1595852924310
+    "lastSave": 1596102950093
   },
   "VCS_STATE": {
     "provider": "GitHub",
